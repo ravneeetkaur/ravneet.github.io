@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravneet Kaur — IT Support Portfolio</title>
+<meta name="description" content="IT Support portfolio for Ravneet Kaur, SAIT Software Development graduate based in Calgary, Alberta.">
+<style>
+  :root { --bg:#f6f7f9; --card:#ffffff; --text:#1a2332; --muted:#5b6575; --accent:#0b5fff; --border:#e2e7ee; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  header { background:#10243e; color:#fff; padding:48px 20px 36px; }
+  .wrap { max-width:900px; margin:0 auto; padding:0 20px; }
+  header h1 { margin:0 0 8px; font-size:2.2rem; line-height:1.2; }
+  header p { margin:6px 0; color:#d7e2f0; max-width:700px; }
+  .tag { display:inline-block; background:#1e4d8c; color:#fff; padding:4px 10px; border-radius:999px; font-size:0.85rem; margin:12px 8px 0 0; }
+  main { padding:28px 0 48px; }
+  section { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; margin:0 0 20px; }
+  h2 { margin-top:0; font-size:1.4rem; }
+  h3 { margin-bottom:6px; }
+  .skills { display:flex; flex-wrap:wrap; gap:8px; padding:0; list-style:none; }
+  .skills li { background:#eef3ff; border:1px solid #d6e2ff; padding:6px 12px; border-radius:999px; font-size:0.95rem; }
+  label { font-weight:600; }
+  input[type="search"] { width:100%; padding:11px 12px; border:1px solid var(--border); border-radius:10px; font-size:1rem; margin:10px 0 4px; }
+  details { border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:14px 0; background:#fbfcfe; }
+  details summary { cursor:pointer; font-weight:700; font-size:1.05rem; }
+  details ol, details ul { margin:8px 0; padding-left:22px; }
+  .muted { color:var(--muted); }
+  .note { background:#fff8e1; border:1px solid #ffe08a; border-radius:10px; padding:12px 14px; }
+  footer { text-align:center; color:var(--muted); padding:0 20px 36px; }
+  a { color:var(--accent); }
+  @media (max-width:600px) { header h1 { font-size:1.7rem; } section { padding:18px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Ravneet Kaur</h1>
+    <p><strong>IT Support Technician</strong> — SAIT Software Development graduate, based in Calgary, Alberta</p>
+    <p>I help people get back to work quickly by listening first, troubleshooting in a clear order, and explaining the fix in plain language.</p>
+    <span class="tag">IT Help Desk</span>
+    <span class="tag">User Support</span>
+    <span class="tag">Calgary, Alberta</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>About me</h2>
+    <p>I completed Software Development at SAIT in Calgary. I am now building my career in IT support, with a focus on help desk and user support roles.</p>
+    <p>My customer service experience in a busy restaurant taught me how to stay calm under pressure, listen to frustrated users, explain things simply, and follow up until a problem is actually solved. I bring that same approach to IT support: no jargon, no guessing, and clear documentation.</p>
+    <p><strong>What I am looking for:</strong> A full-time, permanent IT support / help desk role in Calgary or in a rural Alberta community.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Windows 11</li>
+      <li>Microsoft 365</li>
+      <li>Hardware basics</li>
+      <li>Wi-Fi / network basics</li>
+      <li>Ticketing &amp; documentation</li>
+      <li>Customer support</li>
+      <li>HTML, CSS &amp; JavaScript</li>
+      <li>Troubleshooting methodology</li>
+      <li>Printer &amp; peripheral support</li>
+      <li>Account &amp; password support</li>
+    </ul>
+    <p class="muted">Currently building: CompTIA A+ study, a home IT lab log, and a small UX case study.</p>
+  </section>
+
+  <section>
+    <h2>Troubleshooting guides</h2>
+    <p>Each guide follows the same support process: understand the problem, ask the right questions, check in order from simplest to most complex, fix it, and document it.</p>
+    <label for="guide-search">Search a guide:</label>
+    <input type="search" id="guide-search" placeholder="Try: printer, Wi-Fi, password, slow, email…" aria-label="Search troubleshooting guides">
+
+    <div id="guides">
+    <details open>
+      <summary>1. Wi-Fi won't connect</summary>
+      <p><strong>Problem:</strong> A user cannot connect to Wi-Fi, or keeps dropping off the network.</p>
+      <p><strong>Symptoms:</strong> No internet, Wi-Fi icon shows limited connection, or only one device is affected.</p>
+      <p><strong>What to ask the user:</strong> Is it just your device, or everyone? Did it work before? What changed — new password, new router, moved desks?</p>
+      <p><strong>Checks in order:</strong></p>
+      <ol>
+        <li>Check Wi-Fi is turned on, airplane mode is off, and the correct network is selected.</li>
+        <li>Forget the network and reconnect, typing the password carefully.</li>
+        <li>Restart the device, then restart the router / access point if the whole area is down.</li>
+        <li>Check if other devices work, to find out if it is a device problem or a network problem.</li>
+        <li>Check IP settings, run the network troubleshooter, and update the Wi-Fi driver if needed.</li>
+        <li>Escalate to network support if the access point, switch, or internet service is down.</li>
+      </ol>
+      <p><strong>Solution &amp; follow-up:</strong> Reconnect the user, test a website and an internal system, and document the device, network name, and fix in the ticket.</p>
+    </details>
+
+    <details>
+      <summary>2. Printer shows offline</summary>
+      <p><strong>Problem:</strong> A user tries to print, but the printer shows as offline.</p>
+      <p><strong>Symptoms:</strong> Print jobs sit in the queue, or the printer is not listed.</p>
+      <p><strong>What to ask the user:</strong> Which printer? Is it just you, or the whole office? Did you print to it before?</p>
+      <p><strong>Checks in order:</strong></p>
+      <ol>
+        <li>Check the printer is turned on, has paper and ink, and shows no error lights.</li>
+        <li>Check the cable or Wi-Fi connection, and that the printer is on the same network.</li>
+        <li>On the computer, check that the correct printer is set as default.</li>
+        <li>Clear stuck jobs from the print queue and restart the print spooler service if needed.</li>
+        <li>Remove and reinstall the printer driver if the printer still does not respond.</li>
+        <li>Escalate if it is a network printer issue affecting many users.</li>
+      </ol>
+      <p><strong>Solution &amp; follow-up:</strong> Print a test page, confirm with the user, and note the printer name and fix in the ticket.</p>
+    </details>
+
+    <details>
+      <summary>3. Account locked / password reset</summary>
+      <p><strong>Problem:</strong> A user cannot sign in because the account is locked or they forgot their password.</p>
+      <p><strong>Symptoms:</strong> "Incorrect password", account locked message, or multi-factor prompt not working.</p>
+      <p><strong>What to ask the user:</strong> Are you using the right username and system? Did you recently change your password? Are you locked out of one system or all systems?</p>
+      <p><strong>Checks in order:</strong></p>
+      <ol>
+        <li>Verify the user's identity following company policy. Never share or ask for someone else's password.</li>
+        <li>Check Caps Lock, keyboard layout, and that they are on the correct sign-in page.</li>
+        <li>Unlock the account or reset the password through the approved admin tool.</li>
+        <li>Ask the user to sign in while you are with them, and help them set up multi-factor authentication if needed.</li>
+        <li>Check if the issue affects email, VPN, or other systems, and fix access in each system.</li>
+      </ol>
+      <p><strong>Solution &amp; follow-up:</strong> Confirm the user can sign in, remind them not to share passwords, and document the reset following security policy.</p>
+    </details>
+
+    <details>
+      <summary>4. Computer is very slow</summary>
+      <p><strong>Problem:</strong> A computer takes a long time to start, open programs, or respond.</p>
+      <p><strong>Symptoms:</strong> Freezing, fan running loudly, disk or memory very high in Task Manager.</p>
+      <p><strong>What to ask the user:</strong> When did it start? Is it slow for one program or everything? Have you installed anything new?</p>
+      <p><strong>Checks in order:</strong></p>
+      <ol>
+        <li>Restart the computer and close programs the user does not need.</li>
+        <li>Check Task Manager for programs using a lot of CPU, memory, or disk.</li>
+        <li>Check storage space, run updates, and remove temporary files safely.</li>
+        <li>Check for too many startup programs and turn off the ones not needed.</li>
+        <li>Run a security scan and check for failing hardware signs, like strange noises or repeated crashes.</li>
+        <li>Escalate for a hardware check or upgrade if the slowness continues after these steps.</li>
+      </ol>
+      <p><strong>Solution &amp; follow-up:</strong> Test the programs the user actually uses, explain what changed, and document the fix.</p>
+    </details>
+
+    <details>
+      <summary>5. Email won't sync</summary>
+      <p><strong>Problem:</strong> A user is not receiving new emails, or sent emails are stuck.</p>
+      <p><strong>Symptoms:</strong> Inbox stops updating, sync errors, or emails only arrive on one device.</p>
+      <p><strong>What to ask the user:</strong> Is it email on your phone, computer, or webmail? When did you last get an email? Did you change your password recently?</p>
+      <p><strong>Checks in order:</strong></p>
+      <ol>
+        <li>Check internet connection and that the user is signed in to the correct account.</li>
+        <li>Check storage quota — a full mailbox can stop new mail from arriving.</li>
+        <li>Check sync settings, and that the app is set to fetch new mail automatically.</li>
+        <li>Sign out and sign back in, or remove and re-add the account in the mail app if needed.</li>
+        <li>Check webmail: if webmail works, the problem is in the app or device settings.</li>
+        <li>Escalate to email administration if mail is delayed for many users.</li>
+      </ol>
+      <p><strong>Solution &amp; follow-up:</strong> Send a test email, confirm it arrives, and document the account and fix.</p>
+    </details>
+    </div>
+  </section>
+
+  <section>
+    <h2>How I work a ticket</h2>
+    <ol>
+      <li><strong>Listen:</strong> What is the user trying to do, and what exactly is happening?</li>
+      <li><strong>Reproduce:</strong> Can I see the problem, or is it only on one device?</li>
+      <li><strong>Check simply first:</strong> Power, cables, Wi-Fi, correct account, correct printer.</li>
+      <li><strong>Fix and test:</strong> Fix it, then test with the user, not just on my own.</li>
+      <li><strong>Document:</strong> Write down what was wrong and what fixed it, so the next technician does not start from zero.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Add your professional email and LinkedIn link here before you share this portfolio.</p>
+    <p class="muted">Example: yourname@email.com &nbsp;|&nbsp; linkedin.com/in/yourname</p>
+    <div class="note"><strong>Tip for you, Ravneet:</strong> Replace the example above with your real email and LinkedIn, then save the file and upload it to GitHub Pages using the steps in the guide. Do not add your home address, phone number, or immigration details to a public portfolio.</div>
+  </section>
+</main>
+
+<footer>
+  <p>Built by Ravneet Kaur — IT Support Portfolio, Calgary, Alberta</p>
+</footer>
+
+<script>
+  // Simple search filter for the troubleshooting guides
+  const search = document.getElementById('guide-search');
+  const guides = document.querySelectorAll('#guides details');
+  search.addEventListener('input', function() {
+    const term = search.value.toLowerCase().trim();
+    guides.forEach(function(guide) {
+      const text = guide.textContent.toLowerCase();
+      guide.style.display = (!term || text.includes(term)) ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>
